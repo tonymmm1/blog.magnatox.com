@@ -1,3 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "https://blog.magnatox.com"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Tony Martinez Blog"
+theme = "noteworthy"
+
+[Params]
+email = "tony@mail.magnatox.com"
+github= "https://github.com/tonymmm1"
