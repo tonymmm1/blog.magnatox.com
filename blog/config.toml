@@ -1,0 +1,8 @@
+baseURL = "https://blog.magnatox.com"
+languageCode = "en-us"
+title = "Tony Martinez Blog"
+theme = "noteworthy"
+
+[params]
+email = "tony@mail.magnatox.com"
+github = "https://github.com/tonymmm1"

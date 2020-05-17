@@ -1,0 +1,4 @@
+[submodule "blog/themes/noteworthy"]
+	path = blog/themes/noteworthy
+	url = https://github.com/kimcc/hugo-theme-noteworthy.git
+	branch = master

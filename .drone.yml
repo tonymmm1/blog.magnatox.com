@@ -1,0 +1,27 @@
+kind: pipeline
+type: docker
+name: blog.magnatox.com
+
+steps:
+  - name: build
+    image: plugins/hugo
+    settings:
+      hugo_version: 0.70
+      url: https://blog.magnatox.com
+      config: 
+      content:
+      layout:
+      output:
+      source:
+      theme:
+      validate: true
+  - name: deploy
+    image: drillster/drone-rsync
+    hosts: [ "mail.magnatox.com" ]
+    user: 
+    source: 
+    target: /home/user1/docker/hugo/blog
+    script:
+      - cd /home/user1/docker/hugo/blog
+      - docker-compose down 
+      - docker-compose up 
