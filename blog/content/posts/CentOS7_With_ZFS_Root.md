@@ -2,8 +2,13 @@
 title: "CentOS7 With ZFS Root"
 date: 2020-05-17T20:15:25-05:00
 draft: false
+description: "Guide to configuring CentOS7 with ZFS Root"
+tags: [
+ 	"Linux",
+	"ZFS",
+]
 ---
-Original date of publishing: 2019-09-13
+(Original date of publishing: 2019-09-13)
  
 ## Overview:
 This is an install guide for how to setup CentOS with ZFS root. I prefer to use CentOS as it allows for easy rebuilding of the initramfs and supports dkms for easier kernel upgrading. There will be written detailed explanations of each step and an summary of all commands for easier copy-pasting.

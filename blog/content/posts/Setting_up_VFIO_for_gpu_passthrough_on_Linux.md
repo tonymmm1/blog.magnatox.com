@@ -2,6 +2,12 @@
 title: "Setting Up VFIO for Gpu Passthrough on Linux"
 date: 2020-05-17T21:56:10-05:00
 draft: true
+description: "Setting Up VFIO for Gpu Passthrough on Linux"
+tags: [
+	"KVM",
+	"Linux",
+	"VFIO",
+]
 ---
 (Original Post 2020-05-18_02:56)
 

@@ -1,7 +1,13 @@
 ---
 title: "KVM with ZFS"
 date: 2020-05-17T20:23:22-05:00
+description: "Guide to setting up KVM and ZFS"
 draft: false
+tags: [
+	"KVM",
+	"Linux",
+	"ZFS",
+]
 ---
 (Originally posted 2020-03-03_22:44)
 

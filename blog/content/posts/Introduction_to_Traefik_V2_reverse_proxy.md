@@ -1,7 +1,13 @@
 ---
 title: "Introduction to Traefik V2 reverse proxy"
 date: 2020-05-17T21:04:27-05:00
+description: "Introduction to Traefik V2 reverse proxy"
 draft: false
+tags: [
+	"Docker",
+	"Linux",
+	"Traefik",
+]
 ---
 (Original Post from 2020-04-05_21:45)
 

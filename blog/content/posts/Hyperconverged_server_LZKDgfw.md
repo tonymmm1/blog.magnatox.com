@@ -1,7 +1,15 @@
 ---
 title: "Hyperconverged server with Linux, ZFS, KVM, Docker, and guest firewall"
 date: 2020-05-17T20:25:25-05:00
+description: "Hyperconverged server with Linux, ZFS, KVM, Docker, and guest firewall"
 draft: false
+tags: [
+	"Docker",
+	"Firehol",
+	"Linux",
+	"KVM",
+	"ZFS",
+]
 ---
 (Originally posted 2020-03-04_08:06)
 

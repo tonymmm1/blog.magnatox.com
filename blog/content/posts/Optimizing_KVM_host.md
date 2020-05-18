@@ -2,6 +2,11 @@
 title: "Optimizing KVM host"
 date: 2020-05-17T20:19:09-05:00
 draft: false
+description: "Guide to optimizing KVM host"
+tags: [
+	"KVM",
+	"Linux",
+]
 ---
 (Originally posted 2020-03-03_22:20)
 

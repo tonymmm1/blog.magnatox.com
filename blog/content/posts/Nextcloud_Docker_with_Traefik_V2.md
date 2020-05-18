@@ -2,6 +2,13 @@
 title: "Nextcloud Docker with Traefik V2"
 date: 2020-05-17T21:35:13-05:00
 draft: false
+description: "Nextcloud Docker with Traefik V2"
+tags: [
+	"Docker",
+	"Linux",
+	"Nextcloud",
+	"Traefik",
+]
 ---
 (Originally posted 2020-04-05_21:57)
 
