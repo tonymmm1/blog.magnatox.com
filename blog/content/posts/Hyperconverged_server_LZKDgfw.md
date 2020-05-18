@@ -1,9 +1,9 @@
 ---
-title: "Hyperconverged_server_LZKDgfw"
+title: "Hyperconverged server with Linux, ZFS, KVM, Docker, and guest firewall"
 date: 2020-05-17T20:25:25-05:00
 draft: false
 ---
-(Originally Posted 2020-03-04T08:06-05:00)
+(Originally posted 2020-03-04_08:06)
 
 Setting up a hyperconverged server without relying on external networking is convenient and very space efficient. As long as virtualization layer does not get breached and the server remains fully operational. It allows for virtual guests to share host resources and benefit from having lower latency and overhead to access network mounts, virtual disks, and or guest to guest networking through cpu. 
 
