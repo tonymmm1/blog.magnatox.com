@@ -6,3 +6,4 @@ static/images/screenshot_20-03-03_16:12:47-01.png filter=lfs diff=lfs merge=lfs 
 static/images/traefik.png filter=lfs diff=lfs merge=lfs -text
 static/images/ filter=lfs diff=lfs merge=lfs -text
 static/images/nextcloud.png filter=lfs diff=lfs merge=lfs -text
+static/images/docker.png filter=lfs diff=lfs merge=lfs -text
