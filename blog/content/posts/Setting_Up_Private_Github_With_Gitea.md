@@ -7,9 +7,9 @@ tags: [
 	"Docker",
 ]
 ---
-# Setting Up Private Github With Gitea
-
 ![Gitea](/images/gitea.png)
+
+# Setting Up Private Github With Gitea
 
 Setting up a private [Git](https://git-scm.com/) repository is very useful for creating personal projects and having full control of source code creation. [Gitea](https://gitea.io/) is a very useful utility with a clean interface resembling [Github](https://github.com/). If you want to try test out Gitea follow this [Link](https://try.gitea.io/).
 
