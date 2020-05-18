@@ -1,9 +1,9 @@
 ---
-title: "Optimizing_KVM_host"
+title: "Optimizing KVM host"
 date: 2020-05-17T20:19:09-05:00
 draft: false
 ---
-(Originally Posted 2020-03-03T22:20-05:00)
+(Originally posted 2020-03-03_22:20)
 
 There are many tunables in Linux and KVM that allow for performance to suit certain workloads such as optimizing throughput for databases and or reducing latency for other tasks. In this post I will present some of the optimizations that I chose to use that I noticed decreased my dpc latency in my Windows virtual guests and helped alleviate i/o bottlenecks. 
 
