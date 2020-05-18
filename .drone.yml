@@ -1,0 +1,71 @@
+kind: pipeline
+type: docker
+name: blog.magnatox.com
+
+steps:
+  - name: submodules
+    image: alpine/git
+    commands:
+      - git submodule update --init --recursive --remote
+  - name: build-drafts
+    image: plugins/hugo
+    settings:
+      hugo_version: 0.70.0
+      url: https://blog.magnatox.com
+      source: blog/
+      output: output/
+      buildDrafts: true
+      validate: true
+    when:
+      branch:
+        exclude:
+          - master
+  - name: build
+    image: plugins/hugo
+    settings:
+      hugo_version: 0.70.0
+      url: https://blog.magnatox.com
+      source: blog/
+      output: output/
+      buildDrafts: false
+      validate: true
+    when:
+      branch:
+        - master
+      event:
+        - push
+        - rollback
+        - tag
+        - promote
+  - name: deploy
+    image: drillster/drone-rsync
+    recursive: true
+    target:
+    settings:
+      hosts:
+        from_secret: remote_hosts
+      source: blog/output
+      recursive: true
+      user:
+        from_secret: remote_user
+      key:
+        from_secret: remote_key
+      port:
+        from_secret: remote_port
+      target:
+        from_secret: remote_target
+      environment:
+        REMOTE_TARGET:
+          from_secret: remote_target
+      script:
+        - cd /home/drone/docker/hugo/blog
+        - docker-compose down
+        - docker-compose up -d
+    when:
+      branch:
+        - master
+      event:
+        - push
+        - rollback
+        - tag
+        - promote
