@@ -3,6 +3,43 @@ languageCode = "en-us"
 title = "Tony Martinez Blog"
 theme = "noteworthy"
 
-[Params]
+[taxonomies]
+tag = "tags"
+
+[author]
+name = "Tony Martinez"
+
+[params]
+math = true
 email = "tony@mail.magnatox.com"
 github= "https://github.com/tonymmm1"
+
+[[menu.main]]
+	identifier = "about"
+	name = "About"
+	url = "/about/"
+	weight = 1
+[[menu.main]]
+	identifier = "tags"
+	name = "Tags"
+	url = "/tags/"
+	weight = 2
+[[menu.main]]
+	identifier = "links"
+	name = "Links"
+	url = "/links/"
+	weight = 3
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
