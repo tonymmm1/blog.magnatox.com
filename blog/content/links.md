@@ -7,7 +7,7 @@ title: "Links"
 
 [Drone](https://drone.magnatox.com)
 
-[Gitea](https://docker.magnatox.com)
+[Gitea](https://git.magnatox.com)
 
 [Github](https://github.com/tonymmm1)
 
