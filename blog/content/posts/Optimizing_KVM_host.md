@@ -7,7 +7,6 @@ draft: false
 
 There are many tunables in Linux and KVM that allow for performance to suit certain workloads such as optimizing throughput for databases and or reducing latency for other tasks. In this post I will present some of the optimizations that I chose to use that I noticed decreased my dpc latency in my Windows virtual guests and helped alleviate i/o bottlenecks. 
 
-
 ## Contents:
 * ### Virtual machine creation
 * ### Hugepages
@@ -17,19 +16,18 @@ There are many tunables in Linux and KVM that allow for performance to suit cert
 * ### Multi-queue Virtio Networking
 * ### References
 
-
 ---
 * ##Virtual machine creation
 1. Create a virtual guest using virt-manager 
-![screenshot_20-03-03_16-08-03-01](https://blog.magnatox.com/content/images/2020/03/screenshot_20-03-03_16-08-03-01.png)
+![image1](/images/screenshot_20-03-03_16:08:03-01.png)
 2. Select Q35 and UEFI
-![screenshot_20-03-03_16-09-07-01](https://blog.magnatox.com/content/images/2020/03/screenshot_20-03-03_16-09-07-01.png)
+![image2](/images/screenshot_20-03-03_16:09:07-01.png)
 3. Configure cpu allocation, cpu model and topology
-![screenshot_20-03-03_16-10-20-01](https://blog.magnatox.com/content/images/2020/03/screenshot_20-03-03_16-10-20-01.png)
+![image3](/images/screenshot_20-03-03_16:10:20-01.png)
 4. Set NIC to virtio and select virtual network or macvtap to physical nic on host
-![screenshot_20-03-03_16-11-16-01](https://blog.magnatox.com/content/images/2020/03/screenshot_20-03-03_16-11-16-01.png)
+![image4](/images/screenshot_20-03-03_16:11:16-01.png)
 5. Set Disk to virtio and use threads with writeback/writethrough mode
-![screenshot_20-03-03_16-12-47-01](https://blog.magnatox.com/content/images/2020/03/screenshot_20-03-03_16-12-47-01.png)
+![image5](/images/screenshot_20-03-03_16:12:47-01.png)
 
 
 ---
