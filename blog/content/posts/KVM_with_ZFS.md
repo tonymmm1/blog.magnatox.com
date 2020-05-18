@@ -1,9 +1,9 @@
 ---
-title: "KVM_with_ZFS"
+title: "KVM with ZFS"
 date: 2020-05-17T20:23:22-05:00
 draft: false
 ---
-(Originally posted 2020-03-03T22:44-05:00)
+(Originally posted 2020-03-03_22:44)
 
 Using ZFS on Linux as a backing store for KVM is very beneficial as it allows using copy on write with ZFS snapshots for vm rollbacks ensuring perfect in time backups. However it is possible to adapt ZFS to perform differently for certain KVM virtual guest workloads such as databases and small random operations. 
 
