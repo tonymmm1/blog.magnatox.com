@@ -2,6 +2,7 @@ baseURL = "https://blog.magnatox.com"
 languageCode = "en-us"
 title = "Tony Martinez Blog"
 theme = "noteworthy"
+paginate = 10
 
 [taxonomies]
 tag = "tags"
