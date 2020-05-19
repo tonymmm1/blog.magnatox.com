@@ -9,3 +9,4 @@ static/images/nextcloud.png filter=lfs diff=lfs merge=lfs -text
 static/images/docker.png filter=lfs diff=lfs merge=lfs -text
 static/images/drone.png filter=lfs diff=lfs merge=lfs -text
 static/images/gitea.png filter=lfs diff=lfs merge=lfs -text
+static/images/privatebin.png filter=lfs diff=lfs merge=lfs -text
