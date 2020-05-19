@@ -5,6 +5,7 @@ draft: false
 description: "Setting Up Private Github With Gitea"
 tags: [
 	"Docker",
+	"Linux",
 ]
 ---
 ![Gitea](/images/gitea.png)
