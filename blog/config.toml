@@ -1,34 +1,47 @@
 baseURL = "https://blog.magnatox.com"
 languageCode = "en-us"
 title = "Tony Martinez Blog"
-theme = "noteworthy"
+autho = "Tony Martinez"
+theme = "blackburn"
+paginate = 10
 
-[taxonomies]
+[indexes]
 tag = "tags"
-
-[author]
-name = "Tony Martinez"
+topic = "topics"
 
 [params]
-math = true
-email = "tony@mail.magnatox.com"
-github= "https://github.com/tonymmm1"
-
-[[menu.main]]
-	identifier = "about"
-	name = "About"
-	url = "/about/"
-	weight = 1
-[[menu.main]]
-	identifier = "tags"
-	name = "Tags"
-	url = "/tags/"
-	weight = 2
-[[menu.main]]
-	identifier = "links"
-	name = "Links"
-	url = "/links/"
-	weight = 3
+dateFormat = "2006 Jan 02, 15:04"
+readingTime = true
+custom_css = ["style.css"]
+[menu]
+	[[menu.main]]
+		name = "Home"
+		identifier = "home"
+		pre = "<i class='fa fa-home fa-fw'></i>"
+		url = "/"
+		weight = 1
+	[[menu.main]]
+		name = "About"
+		identifier = "about"
+		pre = "<i class='fa fa-user fa-fw'></i>"
+		url = "/about/"
+		weight = 2
+	[[menu.main]]
+		identifier = "post"
+		name = "Posts"
+		pre = "<i class='fa fa-list fa-fw'></i>"
+		url = "/post/"
+		weight = 3
+	[[menu.main]]
+		identifier = "tags"
+		name = "Tags"
+		url = "/tags/"
+		weight = 4
+	[[menu.main]]
+		identifier = "links"
+		name = "Links"
+		url = "/links/"
+		weight = 5
 
 [privacy]
   [privacy.disqus]

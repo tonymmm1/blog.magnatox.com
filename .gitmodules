@@ -1,4 +1,4 @@
-[submodule "blog/themes/noteworthy"]
-	path = blog/themes/noteworthy
-	url = https://github.com/kimcc/hugo-theme-noteworthy.git
+[submodule "blog/themes/blackburn"]
+	path = blog/themes/blackburn
+	url = https://github.com/yoshiharuyamashita/blackburn.git
 	branch = master
