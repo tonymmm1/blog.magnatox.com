@@ -10,3 +10,10 @@ static/images/docker.png filter=lfs diff=lfs merge=lfs -text
 static/images/drone.png filter=lfs diff=lfs merge=lfs -text
 static/images/gitea.png filter=lfs diff=lfs merge=lfs -text
 static/images/privatebin.png filter=lfs diff=lfs merge=lfs -text
+static/images/gitea_drone_hugo.png filter=lfs diff=lfs merge=lfs -text
+static/images/screenshot_2020-05-19_15:23:30-01.png filter=lfs diff=lfs merge=lfs -text
+static/images/screenshot_2020-05-19_15:48:53-01.png filter=lfs diff=lfs merge=lfs -text
+static/images/screenshot_2020-05-19_15:51:31-01.png filter=lfs diff=lfs merge=lfs -text
+static/images/screenshot_2020-05-19_16:03:06-01.png filter=lfs diff=lfs merge=lfs -text
+static/images/screenshot_2020-05-19_16:05:01-01.png filter=lfs diff=lfs merge=lfs -text
+static/images/screenshot_2020-05-19_16:08:46-01.png filter=lfs diff=lfs merge=lfs -text
