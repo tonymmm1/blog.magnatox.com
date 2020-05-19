@@ -1,7 +1,7 @@
 ---
 title: "Setting Up Private Pastebin With Privatebin"
 date: 2020-05-19T13:46:17-05:00
-draft: true
+draft: false
 tags: [
 	"Docker",
 	"Linux",
