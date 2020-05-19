@@ -39,7 +39,6 @@ steps:
         - promote
   - name: deploy
     image: drillster/drone-rsync
-    recursive: true
     target:
     settings:
       hosts:
@@ -54,9 +53,6 @@ steps:
         from_secret: remote_port
       target:
         from_secret: remote_target
-      environment:
-        REMOTE_TARGET:
-          from_secret: remote_target
       script:
         - cd /home/drone/docker/hugo/blog
         - docker-compose down
