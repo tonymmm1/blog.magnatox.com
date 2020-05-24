@@ -30,7 +30,7 @@ zfs create -o recordsize=512,4k,8k,16k pool/dataset
 zfs get recordsize pool/dataset
 ```
 ashift of 12(4k sector) is recommended for modern hdd
-ashift of 13+(4k sector) is recommended for modern ssd such as Samsung and Intel
+ashift of 13+(8k sector) is recommended for modern ssd such as Samsung and Intel
 Below is a recommended zpool with appropriate features enabled for Linux and ashift 12
 ```
 zpool create -d -o feature@async_destroy=enabled -o feature@empty_bpobj=enabled -o feature@lz4_compress=enabled -o ashift=12 -O compression=lz4 -O acltype=posixacl -O xattr=sa -O utf8only=on -O atime=off -O relatime=on (pool name) /dev/disk/by-id/(your disk serial)
