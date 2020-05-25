@@ -167,7 +167,7 @@ services:
 
 ``echo "public key of drone" >> ~/.ssh/authorized_keys``
 
-### Step 10: Trigger webhook even in git or push a commit to Git repo.
+### Step 10: Trigger webhook in git or push a commit to Git repo.
 
 ![](/images/screenshot_2020-05-19_16:03:06-01.png)
 
