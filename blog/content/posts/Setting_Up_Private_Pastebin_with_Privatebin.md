@@ -20,7 +20,7 @@ tags: [
 
 ### Step 2. Make a directory for privatebin configs.
 
-``mkdir -p /home/(username/docker/privatebin``
+``mkdir -p /home/(username)/docker/privatebin``
 
 ### Step 3. Configure docker-compose.yml for privatebin.
 
