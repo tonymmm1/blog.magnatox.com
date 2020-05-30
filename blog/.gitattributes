@@ -17,3 +17,4 @@ static/images/screenshot_2020-05-19_15:51:31-01.png filter=lfs diff=lfs merge=lf
 static/images/screenshot_2020-05-19_16:03:06-01.png filter=lfs diff=lfs merge=lfs -text
 static/images/screenshot_2020-05-19_16:05:01-01.png filter=lfs diff=lfs merge=lfs -text
 static/images/screenshot_2020-05-19_16:08:46-01.png filter=lfs diff=lfs merge=lfs -text
+static/images/git.png filter=lfs diff=lfs merge=lfs -text
