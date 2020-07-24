@@ -59,6 +59,8 @@ int main()
 
 Many other file modes can be found in the references section below. 
 
+[C Programming](/posts/c_programming)
+
 ## References:
 
 * [modes](https://pubs.opengroup.org/onlinepubs/009695399/functions/fopen.html)
