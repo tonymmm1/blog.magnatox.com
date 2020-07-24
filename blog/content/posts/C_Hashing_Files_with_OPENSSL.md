@@ -109,6 +109,8 @@ int main()
 
 The program above takes in a file path containing a file and then diplays the hash encoded as a hex string next to the input file.
 
+[C Programming](/posts/c_programming)
+
 ## References:
 
 * [OpenSSL](https://www.openssl.org/)
