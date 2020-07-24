@@ -13,7 +13,10 @@ title: "Links"
 
 [Mailcow](https://mail.magnatox.com)
 
+[Nextcloud](https://nextcloud.magnatox.com)
+
 [Pastebin](https://bin.magnatox.com)
 
 [Rocketchat](https://chat.magnatox.com)
 
+[Whoami](https://whoami.magnatox.com)
