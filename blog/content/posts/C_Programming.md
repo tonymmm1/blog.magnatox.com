@@ -14,3 +14,4 @@ This page will contain references to other C programming tutorials or writeups o
 
 
 * [File IO](/posts/c_file_io)
+* [Hashing](/posts/c_hashing_files_with_openssl)
