@@ -35,15 +35,18 @@ menu:
     - name: Posts
       url: /posts/
       weight: 3
+    - name: Projects
+      url: /projects/
+      weight: 4
     - name: Tags
       url: /tags/
-      weight: 4
+      weight: 5
     - name: Links
       url: /links/
-      weight: 5
+      weight: 6
     - name: RSS
       url: /index.xml
-      weight: 6
+      weight: 7
 
 markup:
   defaultMarkdownHandler: goldmark
