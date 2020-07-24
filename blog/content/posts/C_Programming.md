@@ -12,6 +12,6 @@ This page will contain references to other C programming tutorials or writeups o
 
 ## References
 
-
+* [Hello World](/posts/c_hello_world)
 * [File IO](/posts/c_file_io)
 * [Hashing](/posts/c_hashing_files_with_openssl)
