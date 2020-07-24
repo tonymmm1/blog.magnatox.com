@@ -15,6 +15,9 @@ imaging:
   quality: 99
 
 params:
+  description: Tony Martinez Blog
+  homeMetaContent: Tony Martinez Blog
+  footer: Tony Martinez Blog. Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
   dateFormat: 2006-01-02
   katex: true
   darkThemeAsDefault: false
