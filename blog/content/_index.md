@@ -9,4 +9,4 @@ tags: [
 
 Blog with tutorials and information on many involving Computers, Software and other miscellaneous topics. 
 
-Dark theme is avaiable at the bottom of any page.  
+Dark theme is available at the bottom of any page.  
