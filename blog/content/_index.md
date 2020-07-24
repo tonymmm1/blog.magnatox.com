@@ -10,3 +10,5 @@ tags: [
 Blog with tutorials and information on many involving Computers, Software and other miscellaneous topics. 
 
 Dark theme is available at the bottom of any page.  
+
+Source code is available [here.](https://git.magnatox.com/tonymmm1/blog.magnatox.com)
