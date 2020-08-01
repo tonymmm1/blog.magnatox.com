@@ -13,7 +13,7 @@ steps:
   - name: build-drafts
     image: plugins/hugo
     settings:
-      hugo_version: $HUGO_VERSION
+      hugo_version: 0.74.3
       url: https://blog.magnatox.com
       source: blog/
       output: output/
@@ -26,7 +26,7 @@ steps:
   - name: build
     image: plugins/hugo
     settings:
-      hugo_version: $HUGO_VERSION
+      hugo_version: 0.74.3
       url: https://blog.magnatox.com
       source: blog/
       output: output/
