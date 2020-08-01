@@ -2,6 +2,9 @@ kind: pipeline
 type: docker
 name: blog.magnatox.com
 
+environment: 
+  HUGO_VERSION: 0.74.3
+
 steps:
   - name: submodules
     image: alpine/git
@@ -10,7 +13,7 @@ steps:
   - name: build-drafts
     image: plugins/hugo
     settings:
-      hugo_version: 0.74.3
+      hugo_version: $HUGO_VERSION
       url: https://blog.magnatox.com
       source: blog/
       output: output/
@@ -23,7 +26,7 @@ steps:
   - name: build
     image: plugins/hugo
     settings:
-      hugo_version: 0.74.3
+      hugo_version: $HUGO_VERSION
       url: https://blog.magnatox.com
       source: blog/
       output: output/
