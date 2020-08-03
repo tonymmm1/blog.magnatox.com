@@ -12,7 +12,7 @@ tags: [
 
 * [Optichiver](https://git.magnatox.com/tonymmm1/optichiver) - Program for hashing and sorting images to be backed up to optical media.
 
-	* [C-branch](https://git.magnatox.com/tonymmm1/optichiver/src/branch/c_optichiver) - Program written in GNU_C89+
+	* [C-branch](https://git.magnatox.com/tonymmm1/optichiver) - Program written in GNU_C89+
 	* [Python-branch](https://git.magnatox.com/tonymmm1/optichiver/src/branch/py_optichiver) - Program written in Python 3
 
 * [py-backup-script](https://git.magnatox.com/tonymmm1/py-backup-script) - Python script for backing up systems from a TOML configuration file.
