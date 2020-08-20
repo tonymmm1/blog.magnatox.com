@@ -8,6 +8,8 @@ tags: [
 ---
 * [blog.magnatox.com](https://git.magnatox.com/tonymmm1/blog.magnatox.com) - Source code for this blog.
 
+* [C Libraries](https://git.magnatox.com/tonymmm1/c_libraries) - C libraries that are personally maintained.
+
 * [openttd-docker](https://git.magnatox.com/tonymmm1/openttd-docker) - [OpenTTD](https://www.openttd.org/) docker project.
 
 * [Optichiver](https://git.magnatox.com/tonymmm1/optichiver) - Program for hashing and sorting images to be backed up to optical media.
