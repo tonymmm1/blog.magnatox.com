@@ -2,6 +2,6 @@
 
 # Hugo source code for https://blog.magnatox.com
 
-## Hugo Version: 0.77.0
+## Hugo Version: 0.78.1
 
 ### Hugo theme: [Cupper](https://themes.gohugo.io/cupper-hugo-theme/)
