@@ -23,5 +23,7 @@ tags: [
 
 * [py-wg-script](https://git.magnatox.com/tonymmm1/py-wg-script) - Python script for generating [wireguard](https://www.wireguard.com/) vpn server and client files. 
 
+* [ppkg](https://git.magnatox.com/pillar-linux/ppkg) - Package management system for a custom Linux distro written in C. 
+
 * [vmangos-docker](https://github.com/tonymmm1/vmangos-docker) - Docker project for hosting [vmangos](https://github.com/vmangos/core) server core. 
 
