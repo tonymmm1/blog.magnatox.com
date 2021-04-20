@@ -3,7 +3,7 @@ type: docker
 name: blog.magnatox.com
 
 environment: 
-  HUGO_VERSION: 0.81.0
+  HUGO_VERSION: 0.82.1
 
 steps:
   - name: submodules
@@ -13,7 +13,7 @@ steps:
   - name: build-drafts
     image: plugins/hugo
     settings:
-      hugo_version: 0.81.0
+      hugo_version: 0.82.1
       url: https://blog.magnatox.com
       source: blog/
       output: output/
@@ -26,7 +26,7 @@ steps:
   - name: build
     image: plugins/hugo
     settings:
-      hugo_version: 0.81.0
+      hugo_version: 0.82.1
       url: https://blog.magnatox.com
       source: blog/
       output: output/
