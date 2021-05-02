@@ -1,4 +1,4 @@
-[submodule "blog/themes/cupper-hugo-theme"]
-	path = blog/themes/cupper-hugo-theme
-	url = https://github.com/zwbetz-gh/cupper-hugo-theme.git
+[submodule "blog/themes/hugo-theme-cactus"]
+	path = blog/themes/hugo-theme-cactus
+	url = https://github.com/monkeyWzr/hugo-theme-cactus
 	branch = master

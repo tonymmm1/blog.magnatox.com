@@ -28,7 +28,8 @@ chmod 600 acme.json
 docker network create web
 vim docker-compose.yml
 ```
-```
+``` docker
+#docker-compose.yml
 version: "3"
 services:
 #Docker proxy to obfuscate socket from Traefik for additional security

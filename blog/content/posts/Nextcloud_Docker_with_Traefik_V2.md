@@ -21,7 +21,8 @@ mkdir /opt/nextcloud
 cd /opt/nextcloud
 vim docker-compose.yml
 ```
-```
+```docker
+#docker-compose.yml
 version: '3'
 services:
   db:

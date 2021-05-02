@@ -36,7 +36,8 @@ There are two Drone services:
 
 4. Configure docker-compose.yml for Drone server.
 
-```
+```docker
+#docker-compose.yml
 version: "3"
 services:
   drone:
@@ -44,18 +45,18 @@ services:
     image: drone/drone:latest
     environment:
       - DRONE_GITEA_SERVER=										#change to DRONE_GITset to url of gitea/gitea
-      - DRONE_GITEA_CLIENT_ID=										#set to client id from github/gitea
-      - DRONE_GITEA_CLIENT_SECRET=									#set to client secret from github/gitea
+      - DRONE_GITEA_CLIENT_ID=                                  #set to client id from github/gitea
+      - DRONE_GITEA_CLIENT_SECRET=								#set to client secret from github/gitea
       - DRONE_RPC_SECRET=										#generate a key $openssl rand -base64 (length)	
       - DRONE_SERVER_HOST=										#set domain name
       - DRONE_SERVER_PROTO=https
-      - DRONE_USER_CREATE=username:(username),admin:true 						#create user that matches git/gitea username
-      - DRONE_USER_FILTER=(username),admin								#create user that matches git/gitea username
+      - DRONE_USER_CREATE=username:(username),admin:true 		#create user that matches git/gitea username
+      - DRONE_USER_FILTER=(username),admin						#create user that matches git/gitea username
       - DRONE_AGENTS_ENABLED=true
       - DRONE_DATABASE_DRIVER=postgres
       - DRONE_DATABASE_DATASOURCE=postgres://drone:(password)@drone_db:5432/drone?sslmode=disable	#remote (password) and insert password that matches POSTGRES_PASSWORD
-#    labels:												#optional Traefik config
-#      - "traefik.enable=true"										#remote (domain) and insert url
+#    labels:								                    #optional Traefik config
+#      - "traefik.enable=true"									#remote (domain) and insert url
 #      - "traefik.http.routers.drone.rule=Host(`(domain)`)"
 #      - "traefik.http.routers.drone.tls=true"								
 #      - "traefik.http.routers.drone.tls.certresolver=letsencrypt"
@@ -72,9 +73,9 @@ services:
     image: postgres:latest
     environment:
       - POSTGRES_USER=drone
-      - POSTGRES_PASSWORD=										#set password
+      - POSTGRES_PASSWORD=          #set password
       - POSTGRES_DB=drone
-#    labels:												#optional Traefik config
+#    labels:			            #optional Traefik config
 #      - "traefik.enable=false"
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -92,7 +93,8 @@ networks:
 
 5. Configure docker-compose.yml for a Drone runner on same or different host.
 
-```
+```docker
+#docker-compose.yml
 version: "3"
 services: 
   drone-runner:

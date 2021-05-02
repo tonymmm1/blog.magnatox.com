@@ -4,4 +4,4 @@
 
 ## Hugo Version: 0.83.1
 
-### Hugo theme: [Cupper](https://themes.gohugo.io/cupper-hugo-theme/)
+### Hugo theme: [Cactus](https://themes.gohugo.io/hugo-theme-cactus/)

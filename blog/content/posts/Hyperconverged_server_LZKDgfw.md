@@ -21,7 +21,7 @@ Setting up a hyperconverged server without relying on external networking is con
 * ZFS on Linux(ZFS 0.8.3 for this tutorial)
 * KVM/QEMU with Libvirt
 * Docker
-* (IOMMU for nic passthrough)*
+* *(IOMMU for nic passthrough)*
 
 ---
 1. Make sure that Linux is fully up to date and all of the components are installed. 

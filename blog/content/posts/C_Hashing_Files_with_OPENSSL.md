@@ -20,7 +20,7 @@ Make sure to compile the following programs using the -lcrypto flag.
 gcc -o main main.c -lcrypto
 ```
 
-```
+```c
 /* String hashing example */
 #include <stdio.h>
 #include <string.h>
@@ -30,36 +30,33 @@ gcc -o main main.c -lcrypto
 
 int main()
 {
-	size_t i;					/* loop variables */
-	char buff[BUFF_SIZE];				/* buffer for hash */
-	unsigned int md_len;				/* stores hash length */
-	EVP_MD_CTX *mdctx;				/* stores hash context */
-	unsigned char md_value[EVP_MAX_MD_SIZE];	/* stores hash */
-	char *input = "test hash string";		/* input */
+	size_t          i;					        /* loop variables */
+	char            buff[BUFF_SIZE];	        /* buffer for hash */
+	unsigned int    md_len;				        /* stores hash length */
+	EVP_MD_CTX      *mdctx;				        /* stores hash context */
+	unsigned char md_value[EVP_MAX_MD_SIZE];    /* stores hash */
+	char *input = "test hash string";		    /* input */
 
 	mdctx = EVP_MD_CTX_new();	/* Initialize new ctx */
+	const EVP_MD *EVP_md5();    /* use EVP md5 function */
 
-	const EVP_MD *EVP_md5();			/* use EVP md5 function */
-
-	EVP_DigestInit_ex(mdctx, EVP_md5(), NULL);	/* Initializes digest type */
-	
+	EVP_DigestInit_ex(mdctx, EVP_md5(), NULL);	    /* Initializes digest type */
 	EVP_DigestUpdate(mdctx, input, strlen(input));	/* Add input to hash context */
-	
 	EVP_DigestFinal_ex(mdctx, md_value, &md_len);	/* Finalize hash context */
 	
-	for (i = 0; i < md_len; i++)	/* loops through hash length */
+	for (i = 0; i < md_len; i++)    /* loops through hash length */
 	{
-		printf("%02x", md_value[i]);	/* prints 2 hex-values of hash per loop */
+        printf("%02x", md_value[i]);    /* prints 2 hex-values of hash per loop */
 	}
 	printf("  %s\n", input);	/* prints out input after hash */
-	
+
 	return 0;	/* returns 0 */
 }
 ```
 
 This program example takes in a simple string and hashes it and then displays the hash encoded as hex next to input string. 
 
-```
+```c
 /* File hashing example */
 #include <stdio.h>
 #include <stdlib.h>
@@ -69,41 +66,40 @@ This program example takes in a simple string and hashes it and then displays th
 
 int main()
 {
-        size_t i, n;                                    /* loop variables */
-	FILE *fp;					/* file pointer */
-        char buff[BUFF_SIZE];                           /* buffer for hash */
-        unsigned int md_len;                            /* stores hash length */
-        EVP_MD_CTX *mdctx;                              /* stores hash context */
-        unsigned char md_value[EVP_MAX_MD_SIZE];        /* stores hash */
-        char *input = "/bin/echo";         		/* input file */
+    size_t          i, n;                       /* loop variables */
+    FILE            *fp;					    /* file pointer */
+    char            buff[BUFF_SIZE];            /* buffer for hash */
+    unsigned int    md_len;                     /* stores hash length */
+    EVP_MD_CTX      *mdctx;                     /* stores hash context */
+    unsigned char   md_value[EVP_MAX_MD_SIZE];  /* stores hash */
+    char            *input = "/bin/echo";       /* input file */
 
-	fp = fopen(input, "rb");	/* reads in file */
-	if (fp == NULL)
-	{
-		printf("failed to open file %s", input);
-		exit(1);
-	}
+    fp = fopen(input, "rb");	/* reads in file */
+    if (fp == NULL)
+    {
+    	printf("failed to open file %s", input);
+	    exit(1);
+    }
 
-        mdctx = EVP_MD_CTX_new();       /* Initialize new ctx */
+    mdctx = EVP_MD_CTX_new();   /* Initialize new ctx */
+    const EVP_MD *EVP_md5();    /* use EVP md5 function */
 
-        const EVP_MD *EVP_md5();                        /* use EVP md5 function */
+    EVP_DigestInit_ex(mdctx, EVP_md5(), NULL);  /* Initializes digest type */
 
-        EVP_DigestInit_ex(mdctx, EVP_md5(), NULL);      /* Initializes digest type */
+    while ((n = fread(buff, 1, sizeof(buff), fp)))  /* reads in values from buffer containing file pointer */
+    {
+            EVP_DigestUpdate(mdctx, buff, n);   /* Add buffer to hash context */
+    }
 
-        while ((n = fread(buff, 1, sizeof(buff), fp)))       /* reads in values from buffer containing file pointer */
-        {
-                EVP_DigestUpdate(mdctx, buff, n);       /* Add buffer to hash context */
-        }
+    EVP_DigestFinal_ex(mdctx, md_value, &md_len);   /* Finalize hash context */
 
-        EVP_DigestFinal_ex(mdctx, md_value, &md_len);   /* Finalize hash context */
+    for (i = 0; i < md_len; i++)    /* loops through hash length */
+    {
+            printf("%02x", md_value[i]);    /* prints 2 hex-values of hash per loop */
+    }
+    printf("  %s\n", input);    /* prints out input after hash */
 
-        for (i = 0; i < md_len; i++)    /* loops through hash length */
-        {
-                printf("%02x", md_value[i]);    /* prints 2 hex-values of hash per loop */
-        }
-        printf("  %s\n", input);        /* prints out input after hash */
-
-        return 0;       /* returns 0 */
+    return 0;       /* returns 0 */
 }
 ```
 
