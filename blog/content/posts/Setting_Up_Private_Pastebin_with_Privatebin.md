@@ -24,7 +24,8 @@ tags: [
 
 ### Step 3. Configure docker-compose.yml for privatebin.
 
-```
+```docker
+#docker-compose.yml
 version: "3"
 services:
   privatebin:

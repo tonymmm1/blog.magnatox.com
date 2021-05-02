@@ -54,9 +54,10 @@ git push
 [Reference](https://git.magnatox.com/tonymmm1/blog.magnatox.com/src/branch/master/.drone.yml)
 
 ```
+#.drone.yml
 kind: pipeline
 type: docker
-name: 			#set name
+name:           #set name
 
 steps:
   - name: submodules
@@ -142,7 +143,8 @@ mkdir -p /home/(username)/docker/hugo
 
 #### Step 9.3: Configure docker-compose.yml.
 
-```
+```docker
+#docker-compose.yml
 version: "3.7"
 services:
   blog:

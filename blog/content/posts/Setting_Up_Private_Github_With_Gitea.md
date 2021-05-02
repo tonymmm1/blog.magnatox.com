@@ -25,7 +25,8 @@ Setting up a private [Git](https://git-scm.com/) repository is very useful for c
 
 3. Configure docker-compose.yml for Gitea server.
 
-```
+```docker
+#docker-compose.yml
 version: "2"
 
 services:
