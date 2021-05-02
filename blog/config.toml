@@ -1,0 +1,96 @@
+baseURL = "https://blog.magnatox.com"
+languageCode = "en-us"
+title = "Tony Martinez Blog"
+theme = "hugo-theme-cactus"
+
+[[menu.main]]
+  name = "Home"
+  url =  "/"
+  weight = 1
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = 2
+[[menu.main]]
+  name = "Posts"
+  url = "/posts"
+  weight = 3
+[[menu.main]]
+  name = "Projects"
+  url = "/projects"
+  weight = 4
+[[menu.main]]
+  name = "Tags"
+  url = "/tags"
+  weight = 5
+[[menu.main]]
+  name = "Links"
+  url = "/links"
+  weight = 6
+[[menu.main]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 7
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokailight"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 6
+    ordered = false
+    startLevel = 2
+
+[params]
+  colortheme = "white"
+  rss = true
+  googleAnalyticAsync = false
+  mathjax = true
+  
+  description = "Tony Martinez Blog"
+  mainSection = "posts"
+  showAllPostsOnHomePage = false
+  postsonHomePage = 5
+  tagsOverview = true
+  showProjectsList = true   #/data/projects
+  projectsUrl = "/projects"
+  dateFormat = "2006-01-02"
+  
+  show_updated = false
+  showReadTime = true
+ 
+  [params.comments]
+    enabled = false
+
+  [[params.social]]
+    name = "github"
+    link = "https://github.com/tonymmm1"
+  [[params.social]]
+    name = "git"
+    link = "https://git.magnatox.com/tonymmm1"
+  [[params.social]]
+    name = "email"
+    link = "tony@mail.magnatox.com"
