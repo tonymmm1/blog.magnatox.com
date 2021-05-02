@@ -1,0 +1,17 @@
+[[list]]
+name = "blog.magnatox.com"
+url = "https://git.magnatox.com/tonymmm1/blog.magnatox.com"
+desc = "Source code for this blog."
+[[list]]
+name = "Optichiver"
+url = "https://git.magnatox.com/tonymmm1/optichiver"
+desc = "Program for hashing and sorting images to be backed up to optical media."
+[[list]]
+name = "py-wg-script" 
+url = "https://git.magnatox.com/tonymmm1/py-wg-script"
+desc = "Python script for generating [wireguard](https://www.wireguard.com/) vpn server and client files."
+[[list]]
+name = "vmangos-docker"
+url = "https://github.com/tonymmm1/vmangos-docker"
+desc = "Docker project for hosting the vmangos server core"
+
