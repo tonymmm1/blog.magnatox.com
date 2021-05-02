@@ -15,9 +15,8 @@ How to start C programming, what about just printing out a simple statement like
 
 int main()
 {
-    printf("Hello World\n");	/* Prints statement then prints empty line afterwards */	
-
-	return 0;	/* returns with 0 */
+    printf("Hello World\n");    /* Prints statement then prints empty line afterwards */
+    return 0;                   /* returns with 0 */
 }
 ```
 
