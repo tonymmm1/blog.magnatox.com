@@ -3,28 +3,27 @@ title: "C File IO"
 date: 2020-07-23T19:50:09-05:00
 draft: false
 tags: [
-	"C",
-	"Programming",
+    "C",
+    "Programming",
 ]
 ---
 
 C file io tutorial with examples. 
 
-```
+```c
 #include <stdio.h>
 
 int main()
 {
-	FILE *fp;			/* file pointer */
-	char *filepath = "test.txt"	/* file location */
-	
-	fopen(filepath, "r");		/* fopen("string", "mode") */
-	
-	/* perform some operation */
+    FILE *fp;                   /* file pointer */
+    char *filepath = "test.txt" /* file location */
 
-	fclose(fp); /* closes file */
-	
-	return 0; /* return code 0 indicates program successfully ran */
+    fopen(filepath, "r");       /* fopen("string", "mode") */
+
+    /* perform some operation */
+
+    fclose(fp);                 /* closes file */
+    return 0;                   /* return code 0 indicates program successfully ran */
 }
 ```
 
@@ -32,28 +31,26 @@ In the example above the program sets a file pointer variable to use to store fi
 
 When working with files it is recommended to set some sort of an error check to ensure that file is actually accessible.
 
-```
-#include <stdio.h>	/* standard C library */
-#include <stdlib.h>	/* adds exit() functionality */
+```c
+#include <stdio.h>  /* standard C library */
+#include <stdlib.h> /* adds exit() functionality */
 
 int main()
 {       
-        FILE *fp;			/* file pointer */
-        char *file_path = "test.txt";	/* file location */
-        
-        fopen(file_path, "r");          /* fopen("string", "mode") */
+    FILE *fp;                       /* file pointer */
+    char *file_path = "test.txt";   /* file location */
 
-	if (fp == NULL)	/* if file is NULL */
-	{
-		printf("unable to open file %s\n", file_path);	/* error output */
-		exit(1);	/* exits program */
-	}
-      
-        /* perform some operation */
-        
-        fclose(fp); /* closes file */
+    fopen(file_path, "r");          /* fopen("string", "mode") */
+    if (fp == NULL)                 /* if file is NULL */
+    {
+        printf("unable to open file %s\n", file_path);  /* error output */
+        exit(1);    /* exits program */
+    }
 
-	return 0; /* return code 0 indicates program successfully ran */
+    /* perform some operation */
+
+    fclose(fp); /* closes file */
+    return 0; /* return code 0 indicates program successfully ran */
 }
 ```
 

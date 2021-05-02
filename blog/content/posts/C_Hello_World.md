@@ -10,7 +10,7 @@ tags: [
 
 How to start C programming, what about just printing out a simple statement like hello world.
 
-```
+```c
 #include <stdio.h>	/* standard C library */
 
 int main()
