@@ -37,7 +37,7 @@ This post will be covering how to deploy a Kerberos server and client for secure
      kdc_tcp_ports = 88
     [realms]
      EXAMPLE.COM = {
-      master_key_type = aes256-cts
+      #master_key_type = aes256-cts
       acl_file = /var/kerberos/krb5kdc/kadm5.acl
       dict_file = /usr/share/dict/words
       admin_keytab = /var/kerberos/krb5kdc/kadm5.keytab
