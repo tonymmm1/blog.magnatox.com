@@ -2,6 +2,6 @@
 
 # Hugo source code for https://blog.magnatox.com
 
-## Hugo Version: 0.83.1
+## Hugo Version: 0.84.1
 
 ### Hugo theme: [Cactus](https://themes.gohugo.io/hugo-theme-cactus/)
