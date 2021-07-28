@@ -8,9 +8,9 @@ environment:
 
 steps:
   - name: submodules
-    image: alpine/git
+    image: alpine/git:latest
     commands:
-      - git submodule update --init --recursive --remote
+      - git submodule update --remote
   - name: build-drafts
     image: plugins/hugo
     settings:
