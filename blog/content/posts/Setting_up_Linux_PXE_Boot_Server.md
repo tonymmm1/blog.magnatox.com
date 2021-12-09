@@ -5,7 +5,7 @@ draft: false
 tags: [
 	"Linux",
     "Networking",
-    "PXE",
+    "PXE"
 ]
 ---
 
