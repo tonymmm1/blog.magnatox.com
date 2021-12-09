@@ -1,0 +1,2 @@
+Dnsmasq_icon.svg filter=lfs diff=lfs merge=lfs -text
+Tux.svg filter=lfs diff=lfs merge=lfs -text
