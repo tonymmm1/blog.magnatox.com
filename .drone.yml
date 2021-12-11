@@ -3,21 +3,19 @@ kind: pipeline
 type: docker
 name: blog.magnatox.com
 
-environment: 
-  HUGO_VERSION: 0.90.0
-
 steps:
   - name: submodules
     image: alpine/git:latest
     commands:
-      - git submodule update --remote
+      - git submodule update --init --recursive --remote
   - name: build-drafts
     image: plugins/hugo
     settings:
-      hugo_version: 0.90.0
+      hugo_version: 0.90.1
+      extended: true
+      pull: always
       url: https://blog.magnatox.com
       source: blog/
-      output: output/
       buildDrafts: true
       validate: true
     when:
@@ -27,10 +25,11 @@ steps:
   - name: build
     image: plugins/hugo
     settings:
-      hugo_version: 0.90.0
+      hugo_version: 0.90.1
+      extended: true
+      pull: always
       url: https://blog.magnatox.com
       source: blog/
-      output: output/
       buildDrafts: false
       validate: true
     when:
@@ -47,7 +46,7 @@ steps:
     settings:
       hosts:
         from_secret: remote_hosts
-      source: blog/output
+      source: blog/public/*
       recursive: true
       user:
         from_secret: remote_user
