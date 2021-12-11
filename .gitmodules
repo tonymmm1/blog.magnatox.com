@@ -1,4 +1,4 @@
 [submodule "blog/themes/hugo-theme-cactus"]
 	path = blog/themes/hugo-theme-cactus
 	url = https://github.com/monkeyWzr/hugo-theme-cactus
-	branch = master
+	branch = main
