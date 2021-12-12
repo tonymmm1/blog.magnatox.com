@@ -16,7 +16,7 @@ DHCP and PXE server using [Dnsmasq](https://thekelleys.org.uk/dnsmasq/doc.html) 
 
 ## Linux environment: 
 
-1. First it is important to have a Linux vm or host that can server as the PXE/DHCP server connected to a network. This network must only have one dhcp server broadcast. Usually configuring a separate vlan for PXE traffic is recommended.
+1. First it is important to have a Linux vm or host that can serve as the PXE/DHCP server connected to a network. This network must only have one dhcp server broadcast. Usually configuring a separate vlan for PXE traffic is recommended.
 
 2. Assumptions made in this post:
 
@@ -173,7 +173,7 @@ sudo chown -R dnsmasq /srv/tftp
 sudo chmod -R 755 /srv/tftp
 ```
 
-### 12. Configure dnsmasq to server dhcp and PXE.
+### 12. Configure dnsmasq to serve dhcp and PXE.
 
 Make sure to configure ``/etc/dnsmasq.conf`` with correct variables as this file contains the assumptions made above.
 
