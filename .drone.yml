@@ -11,13 +11,12 @@ steps:
   - name: build-drafts
     image: plugins/hugo
     settings:
-      hugo_version: 0.92.1
+      hugo_version: 0.93.2
       extended: true
       pull: always
       url: https://blog.magnatox.com
       source: blog/
       buildDrafts: true
-      validate: true
     when:
       branch:
         exclude:
@@ -25,13 +24,12 @@ steps:
   - name: build
     image: plugins/hugo
     settings:
-      hugo_version: 0.92.1
+      hugo_version: 0.93.2
       extended: true
       pull: always
       url: https://blog.magnatox.com
       source: blog/
       buildDrafts: false
-      validate: true
     when:
       branch:
         - master
