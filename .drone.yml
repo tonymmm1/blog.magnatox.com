@@ -56,9 +56,9 @@ steps:
         from_secret: remote_target
       script:
         - cd /home/drone/docker/hugo/blog
-        - docker-compose down
-        - docker-compose pull
-        - docker-compose up -d
+        - docker compose down
+        - docker compose pull
+        - docker compose up -d
     when:
       branch:
         - master
