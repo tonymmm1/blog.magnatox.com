@@ -2,6 +2,6 @@
 
 # <https://blog.magnatox.com>
 
-## Hugo Version: [0.93.3](https://github.com/gohugoio/hugo/releases)
+## Hugo Version: [0.94.0](https://github.com/gohugoio/hugo/releases)
 
 ### Hugo theme: [Cactus](https://themes.gohugo.io/hugo-theme-cactus/)
