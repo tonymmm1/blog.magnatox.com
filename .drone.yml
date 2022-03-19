@@ -11,7 +11,7 @@ steps:
   - name: build-drafts
     image: plugins/hugo
     settings:
-      hugo_version: 0.94.2
+      hugo_version: 0.95.0
       extended: true
       pull: always
       url: https://blog.magnatox.com
@@ -24,7 +24,7 @@ steps:
   - name: build
     image: plugins/hugo
     settings:
-      hugo_version: 0.94.2
+      hugo_version: 0.95.0
       extended: true
       pull: always
       url: https://blog.magnatox.com
