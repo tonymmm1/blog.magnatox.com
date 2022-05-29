@@ -84,7 +84,6 @@ theme = "hugo-theme-cactus"
  
   [params.comments]
     enabled = false
-	engine = "disqus"
 
   [[params.social]]
     name = "github"
