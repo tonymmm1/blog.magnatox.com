@@ -2,6 +2,6 @@
 
 # <https://blog.magnatox.com>
 
-## Hugo [Hugo](https://github.com/gohugoio/hugo)
+## [Hugo](https://github.com/gohugoio/hugo)
 
 ### Hugo theme: [Cactus](https://themes.gohugo.io/hugo-theme-cactus/)
