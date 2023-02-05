@@ -1,5 +1,5 @@
 ---
-date: 2020-05-17
+date: 2023-02-04
 type: section
 title: "Links"
 ---
@@ -7,16 +7,10 @@ title: "Links"
 
 [Drone](https://drone.magnatox.com)
 
-[Gitea](https://git.magnatox.com)
+[Gitea](https://git.magnatox.com/tonymmm1)
 
 [Github](https://github.com/tonymmm1)
 
 [Mailcow](https://mail.magnatox.com)
 
 [Nextcloud](https://nextcloud.magnatox.com)
-
-[Pastebin](https://bin.magnatox.com)
-
-[Rocketchat](https://chat.magnatox.com)
-
-[Whoami](https://whoami.magnatox.com)
