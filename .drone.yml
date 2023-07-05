@@ -11,7 +11,7 @@ steps:
   - name: build-drafts
     image: plugins/hugo
     settings:
-      hugo_version: 0.110.0
+      hugo_version: 0.115.1
       extended: true
       pull: always
       url: https://blog.magnatox.com
@@ -24,7 +24,7 @@ steps:
   - name: build
     image: plugins/hugo
     settings:
-      hugo_version: 0.110.0
+      hugo_version: 0.115.1
       extended: true
       pull: always
       url: https://blog.magnatox.com
@@ -40,7 +40,9 @@ steps:
         - promote
   - name: deploy
     image: drillster/drone-rsync
-    target:
+    environment:
+      DIRECTORY:
+        from_secret: remote_directory
     settings:
       hosts:
         from_secret: remote_hosts
@@ -55,7 +57,7 @@ steps:
       target:
         from_secret: remote_target
       script:
-        - cd /home/drone/docker/hugo/blog
+        - cd ${REMOTE_DIRECTORY}
         - docker compose down
         - docker compose pull
         - docker compose up -d
